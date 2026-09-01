@@ -11,7 +11,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sharmajisafawale.com"),
   title: { default: "Sharma Ji's Safawala", template: "%s | Sharma Ji's Safawala" },
   description: "Family-run groom pagdi and wedding safa styling, delivered with the same care as three generations before.",
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/favicon-16x16.png?v=2", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/android-chrome-192x192.png?v=2", type: "image/png", sizes: "192x192" },
+      { url: "/android-chrome-512x512.png?v=2", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico?v=2",
+    apple: [{ url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     images: [{ url: "/og.png", width: 1745, height: 909, alt: "Sharma Ji's Safawala — trusted, family-run wedding safa and groom pagdi service." }],
   },

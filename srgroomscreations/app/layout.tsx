@@ -11,7 +11,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://srgroomscreations.in"),
   title: { default: "SR Grooms Creations", template: "%s | SR Grooms Creations" },
   description: "Bespoke groom pagdis and coordinated wedding safas, created and tied at your venue for a truly one-off look.",
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/favicon-16x16.png?v=2", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/android-chrome-192x192.png?v=2", type: "image/png", sizes: "192x192" },
+      { url: "/android-chrome-512x512.png?v=2", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico?v=2",
+    apple: [{ url: "/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     images: [{ url: "/og.png", width: 1745, height: 909, alt: "SR Grooms Creations — bespoke groom pagdi design and wedding safa creation." }],
   },
