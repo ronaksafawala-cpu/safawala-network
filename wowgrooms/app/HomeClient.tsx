@@ -85,7 +85,7 @@ export default function HomeClient() {
             <p className="hero-lede">A groom pagdi and baraati safa team built for the reaction, not just the ceremony — coordinated colours, sharp folds and a groom who stands out in every photo.</p>
             <div className="hero-actions"><a className="button primary" href="#quote">Get a free quote</a><a className="text-link" href="#gallery">View real celebrations <span>↗</span></a></div>
             <div className="hero-photo">
-              <img src="/gallery/mountain-wedding.webp" alt="Groom in an ivory wedding safa celebrating under rose petals" />
+              <img src="/gallery/mountain-wedding.webp" alt="Groom in an ivory wedding safa celebrating under rose petals" width="1200" height="1500" />
               <div className="photo-note"><span>Serving Wow Grooms & nearby destinations</span><strong>31 unique locations</strong></div>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function HomeClient() {
         </section>
 
         <section className="editorial section-shell">
-          <div className="editorial-image"><img src="/gallery/rishikesh-editorial.webp" alt="Groom wearing a refined ivory wedding safa and embroidered sherwani" /></div>
+          <div className="editorial-image"><img src="/gallery/rishikesh-editorial.webp" alt="Groom wearing a refined ivory wedding safa and embroidered sherwani" width="1080" height="1350" /></div>
           <div className="editorial-copy"><p className="eyebrow">Entrance-ready planning</p><h2>Calm preparation before the celebration begins.</h2><p>The groom's entrance is one moment, so a safa service only works well when the styling is planned around the exact time he'll be seen.</p><p>We confirm the venue, reporting time and preparation room before the event. The groom receives an unhurried styling slot; family and baraatis follow in planned batches so the whole party is ready together.</p><ul><li>On-location hotel, resort and home service</li><li>Groom, family and baraati styling plans</li><li>Colour coordination from outfit references</li><li>Travel planning for nearby destinations</li></ul></div>
         </section>
 
@@ -156,7 +156,7 @@ export default function HomeClient() {
 
         <section className="gallery-section" id="gallery">
           <div className="section-shell"><div className="section-heading compact"><div><p className="eyebrow">Selected work</p><h2>Real details. Quiet confidence.</h2></div><p>Photographs from the supplied Safawala collection, selected for their focus on groom styling and wedding craft.</p></div></div>
-          <div className="gallery-grid">{gallery.map(([src, alt], index) => <figure className={`gallery-item gallery-${index + 1}`} key={src}><img src={src} alt={alt} loading={index > 1 ? "lazy" : "eager"} /><figcaption>{index === 0 ? "A celebration framed by the hills" : index === 1 ? "Ivory folds with floral detail" : index === 2 ? "A timeless groom palette" : index === 3 ? "Made to move with the moment" : index === 4 ? "Emerald accents, balanced softly" : "Details that hold the whole look"}</figcaption></figure>)}</div>
+          <div className="gallery-grid">{gallery.map(([src, alt], index) => <figure className={`gallery-item gallery-${index + 1}`} key={src}><img src={src} alt={alt} loading={index > 1 ? "lazy" : "eager"} width="1350" height="1688" /><figcaption>{index === 0 ? "A celebration framed by the hills" : index === 1 ? "Ivory folds with floral detail" : index === 2 ? "A timeless groom palette" : index === 3 ? "Made to move with the moment" : index === 4 ? "Emerald accents, balanced softly" : "Details that hold the whole look"}</figcaption></figure>)}</div>
         </section>
 
         <section className="content-section section-shell process">
