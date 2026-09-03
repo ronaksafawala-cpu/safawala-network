@@ -3,9 +3,9 @@ import HomeClient from "./HomeClient";
 import { internalLocations } from "./site-data";
 
 export const metadata: Metadata = {
-  title: "Wedding Safa Wala in Dharamshala | Groom Pagdi & Turban",
+  title: "Designer Wedding Safa in Dharamshala | Groom & Baraati Safa | Safawala",
   description:
-    "Professional wedding safa tying in Dharamshala for grooms, families and baraatis. Explore styles, service areas and request availability on WhatsApp.",
+    "Explore designer wedding safa in Dharamshala for grooms, family, baraat members and wedding guests. Find royal pagdi, traditional safa, Rajasthani & Gujarati styles, kalgi and groom accessories at Safawala.",
   alternates: { canonical: "https://safawaladharamshala.com/" },
   openGraph: {
     title: "Wedding Safa Wala in Dharamshala",

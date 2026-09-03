@@ -3,9 +3,9 @@ import HomeClient from "./HomeClient";
 import { internalLocations } from "./site-data";
 
 export const metadata: Metadata = {
-  title: "Wedding Safa Wala in Kenya | Groom Pagdi & Turban",
+  title: "Designer Wedding Safa in Kenya | Groom & Baraati Safa | Safawala",
   description:
-    "Professional wedding safa tying in Kenya for grooms, families and baraatis. Explore styles, service areas and request availability on WhatsApp.",
+    "Explore designer wedding safa in Kenya for grooms, family, baraat members and wedding guests. Find royal pagdi, traditional safa, Rajasthani & Gujarati styles, kalgi and groom accessories at Safawala.",
   alternates: { canonical: "https://safawalakenya.com/" },
   openGraph: {
     title: "Wedding Safa Wala in Kenya",
