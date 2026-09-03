@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "Trusted, family-run wedding safa rental and groom pagdi styling, on-location for weddings across India.",
   alternates: { canonical: "https://sharmajisafawala.com/" },
   openGraph: {
-    title: "Wedding Safa Wala in Sharma Ji's Safawala",
-    description: "Royal safa and pagdi styling for Sharma Ji's Safawala weddings.",
+    title: "Family Wedding Safa & Groom Pagdi Service",
+    description: "Trusted, family-run wedding safa rental and groom pagdi styling, on-location for weddings across India.",
+    url: "https://sharmajisafawala.com/",
+    siteName: "Sharma Ji's Safawala",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Sharma Ji's Safawala — trusted, family-run wedding safa and groom pagdi service." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://sharmajisafawala.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

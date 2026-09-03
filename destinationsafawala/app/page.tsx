@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "A travel-ready wedding safa and groom pagdi team for destination weddings — resorts, hill stations, beaches and heritage venues, in India or abroad.",
   alternates: { canonical: "https://destinationsafawala.com/" },
   openGraph: {
-    title: "Wedding Safa Wala in Destination Safawala",
-    description: "Royal safa and pagdi styling for Destination Safawala weddings.",
+    title: "Destination Wedding Safa & Groom Pagdi Team",
+    description: "A travel-ready wedding safa and groom pagdi team for destination weddings — resorts, hill stations, beaches and heritage venues, in India or abroad.",
+    url: "https://destinationsafawala.com/",
+    siteName: "Destination Safawala",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Destination Safawala — travel-ready wedding safa styling for destination weddings." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://destinationsafawala.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

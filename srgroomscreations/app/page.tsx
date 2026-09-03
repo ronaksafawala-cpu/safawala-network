@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "Custom-designed groom pagdi and wedding safa creations, tied on-location and built around your individual outfit and story.",
   alternates: { canonical: "https://srgroomscreations.in/" },
   openGraph: {
-    title: "Wedding Safa Wala in SR Grooms Creations",
-    description: "Royal safa and pagdi styling for SR Grooms Creations weddings.",
+    title: "Bespoke Groom Pagdi Creations & Wedding Safa Design",
+    description: "Custom-designed groom pagdi and wedding safa creations, tied on-location and built around your individual outfit and story.",
+    url: "https://srgroomscreations.in/",
+    siteName: "SR Grooms Creations",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "SR Grooms Creations — bespoke groom pagdi design and wedding safa creation." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://srgroomscreations.in",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

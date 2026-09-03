@@ -10,19 +10,35 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Safa Wala in Maldives",
     description: "Royal safa and pagdi styling for Maldives weddings.",
+    url: "https://safawalamaldives.com/",
+    siteName: "Safawala Maldives",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Safawala Maldives — Wedding Safa, tied with care." }],
   },
 };
 
 const orgSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Safawala Maldives",
+  "@type": "Service",
+  "name": "Wedding Safa & Pagdi Styling in Maldives",
+  "serviceType": "Wedding safa and groom pagdi styling",
+  "provider": {
+    "@type": "Organization",
+    "name": "Safawala",
+    "telephone": "+919725295691",
+  },
   "image": "https://safawalamaldives.com/og.png",
-  "telephone": "+919725295691",
   "url": "https://safawalamaldives.com",
-  "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

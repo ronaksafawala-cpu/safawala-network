@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "Professional groom pagdi styling and wedding safa tying, delivered on-location for weddings across India.",
   alternates: { canonical: "https://srgrooms.com/" },
   openGraph: {
-    title: "Wedding Safa Wala in SR Grooms",
-    description: "Royal safa and pagdi styling for SR Grooms weddings.",
+    title: "Complete Groom Pagdi & Safa Styling Studio",
+    description: "Professional groom pagdi styling and wedding safa tying, delivered on-location for weddings across India.",
+    url: "https://srgrooms.com/",
+    siteName: "SR Grooms",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "SR Grooms — complete groom pagdi and wedding safa styling." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://srgrooms.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

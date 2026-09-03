@@ -10,8 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Safa Wala in Delhi",
     description: "Royal safa and pagdi styling for Delhi weddings.",
+    url: "https://safawaladelhi.com/",
+    siteName: "Safawala Delhi",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Safawala Delhi — Wedding Safa, tied with care." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://safawaladelhi.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

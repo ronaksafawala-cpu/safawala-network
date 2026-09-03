@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "Wedding safa rental and groom pagdi styling built to make an entrance — on-location service for weddings across India.",
   alternates: { canonical: "https://wowgrooms.in/" },
   openGraph: {
-    title: "Wedding Safa Wala in Wow Grooms",
-    description: "Royal safa and pagdi styling for Wow Grooms weddings.",
+    title: "Groom Pagdi & Wedding Safa Styling",
+    description: "Wedding safa rental and groom pagdi styling built to make an entrance — on-location service for weddings across India.",
+    url: "https://wowgrooms.in/",
+    siteName: "Wow Grooms",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Wow Grooms — groom pagdi and wedding safa styling built to make an entrance." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://wowgrooms.in",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

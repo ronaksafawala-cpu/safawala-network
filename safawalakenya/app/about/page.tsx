@@ -29,12 +29,14 @@ export default function AboutPage() {
 
         <section className="subpage-content section-shell">
           <div>
+            <h2>Who's behind the styling</h2>
+            <p>Safawala is run by a dedicated team of safa and pagdi artists rather than a single stylist — every booking is matched with team members experienced in the fold, fabric and pace a wedding day actually needs. The team travels to your venue directly, so there's no showroom visit or separate fitting appointment to schedule.</p>
             <h2>How booking works</h2>
             <p>Every enquiry starts with a WhatsApp or phone message — share your event date, venue and approximate guest count, and the team responds with availability and a package suited to your event.</p>
             <h2>How the day is planned</h2>
             <p>On the day, the groom always receives a dedicated, unhurried styling session first. Close family and the wider baraat are then styled in coordinated batches, so the order of the day is protected and nobody is left waiting at the wrong moment.</p>
             <h2>How pricing works</h2>
-            <p>Pricing is never a flat, generic number. It's built from your actual guest count, the fabric you choose, the complexity of the fold or style, and how far the team needs to travel — so the quote reflects your event rather than an average one.</p>
+            <p>Pricing typically runs ₹5,000–₹15,000 per person. It's never a flat, generic number — the exact figure is built from your actual guest count, the fabric you choose, the complexity of the fold or style, and how far the team needs to travel, so the quote reflects your event rather than an average one.</p>
           </div>
           <div className="subpage-card"><h3>Get in touch</h3><p>Questions about this page? Reach the team directly.</p><p><a className="footer-phone" href="tel:+919725295691">+91 97252 95691</a></p><p><a href="https://wa.me/919725295691">WhatsApp the team</a></p></div>
         </section>

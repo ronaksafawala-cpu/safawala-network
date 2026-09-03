@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "Discreet, premium wedding safa and groom pagdi styling for celebrity and high-profile weddings. On-location service anywhere, coordinated with your planner or team.",
   alternates: { canonical: "https://celebritysafawala.com/" },
   openGraph: {
-    title: "Wedding Safa Wala in Celebrity Safawala",
-    description: "Royal safa and pagdi styling for Celebrity Safawala weddings.",
+    title: "Celebrity & High-Profile Wedding Safa Styling",
+    description: "Discreet, premium wedding safa and groom pagdi styling for celebrity and high-profile weddings. On-location service anywhere, coordinated with your planner or team.",
+    url: "https://celebritysafawala.com/",
+    siteName: "Celebrity Safawala",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Celebrity Safawala — discreet, premium wedding safa styling." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://celebritysafawala.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

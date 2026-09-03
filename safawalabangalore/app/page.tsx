@@ -10,8 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Safa Wala in Bengaluru",
     description: "Royal safa and pagdi styling for Bengaluru weddings.",
+    url: "https://safawalabangalore.com/",
+    siteName: "Safawala Bengaluru",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Safawala Bengaluru — Wedding Safa, tied with care." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://safawalabangalore.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

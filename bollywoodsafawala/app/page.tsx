@@ -8,10 +8,13 @@ export const metadata: Metadata = {
     "Camera-ready wedding safa and groom pagdi styling for real weddings, pre-wedding shoots and film or TV productions.",
   alternates: { canonical: "https://bollywoodsafawala.com/" },
   openGraph: {
-    title: "Wedding Safa Wala in Bollywood Safawala",
-    description: "Royal safa and pagdi styling for Bollywood Safawala weddings.",
+    title: "Cinematic Wedding Safa & Groom Pagdi Styling",
+    description: "Camera-ready wedding safa and groom pagdi styling for real weddings, pre-wedding shoots and film or TV productions.",
+    url: "https://bollywoodsafawala.com/",
+    siteName: "Bollywood Safawala",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Bollywood Safawala — cinematic, camera-ready wedding safa styling." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://bollywoodsafawala.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

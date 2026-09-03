@@ -1,1 +1,34 @@
-export { default, generateMetadata, generateStaticParams } from "../areas/[slug]/page";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import SeoLandingPage from "../SeoLandingPage";
+import { locations } from "../site-data";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export function generateStaticParams() {
+  return locations.map(({ slug }) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const location = locations.find((item) => item.slug === slug);
+  if (!location) return {};
+  return {
+    title: `Wedding Safa Wala in ${location.name} | Groom Pagdi & Baraati Safa`,
+    description: `Book a professional wedding safa wala in ${location.name} for groom pagdi, family pagdi and baraati safa tying. On-location service from Safawala Goa.`,
+    alternates: { canonical: `https://safawalgoa.com/${location.slug}` },
+  };
+}
+
+export default async function AreaPage({ params }: Props) {
+  const { slug } = await params;
+  const location = locations.find((item) => item.slug === slug);
+  if (!location) notFound();
+  const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: location.faq.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })) };
+  const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://safawalgoa.com/" },
+    { "@type": "ListItem", position: 2, name: "Service areas", item: "https://safawalgoa.com/#areas" },
+    { "@type": "ListItem", position: 3, name: location.name, item: `https://safawalgoa.com/${location.slug}` },
+  ] };
+  return <><SeoLandingPage kind="location" location={location} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} /></>;
+}

@@ -10,8 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Safa Wala in Ahmedabad",
     description: "Royal safa and pagdi styling for Ahmedabad weddings.",
+    url: "https://safawalaahemdabad.com/",
+    siteName: "Safawala Ahmedabad",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Safawala Ahmedabad — Wedding Safa, tied with care." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://safawalaahemdabad.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

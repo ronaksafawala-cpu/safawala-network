@@ -10,8 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Wedding Safa Wala in Pune",
     description: "Royal safa and pagdi styling for Pune weddings.",
+    url: "https://safawalapune.com/",
+    siteName: "Safawala Pune",
     type: "website",
     locale: "en_IN",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Safawala Pune — Wedding Safa, tied with care." }],
   },
 };
 
@@ -23,6 +26,15 @@ const orgSchema = {
   "telephone": "+919725295691",
   "url": "https://safawalapune.com",
   "priceRange": "$$",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": 5000,
+      "maxPrice": 15000,
+      "priceCurrency": "INR",
+    },
+  },
 };
 
 export default function Home() {

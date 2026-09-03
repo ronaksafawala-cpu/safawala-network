@@ -6,7 +6,7 @@ const BASE = "https://srgroomscreations.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const home: MetadataRoute.Sitemap = [
-    { url: BASE, changeFrequency: "monthly", priority: 1.0 },
+    { url: `${BASE}/`, changeFrequency: "monthly", priority: 1.0 },
   ];
   const areas: MetadataRoute.Sitemap = locations.map((loc) => ({
     url: `${BASE}/${loc.slug}`,
