@@ -45,7 +45,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="section-shell" style={{ paddingBlock: "48px 80px" }}>
         <h2 style={{ fontSize: 16, marginBottom: 4 }}>Popular searches for {service.name.toLowerCase()}</h2>
         <p style={{ color: "var(--muted)", fontSize: 12, marginBottom: 20 }}>{relatedKeywords.length} specific searches we have dedicated pages for.</p>
-        <div className="explore-chip-links">{relatedKeywords.map((k) => <a href={`/keywords/${k.slug}`} key={k.slug}>{k.title}</a>)}</div>
+        <div className="explore-chip-links">{relatedKeywords.map((k) => <a href={`/${k.slug}`} key={k.slug}>{k.title}</a>)}</div>
       </section>
     )}
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
